@@ -1,0 +1,1706 @@
+# Build a Complete Premium Indian Fashion E-Commerce Website
+
+Create a fully functional, production-quality Indian fashion e-commerce website inspired by the provided reference screenshots.
+
+The website must reproduce the **overall visual language, spacing, layout hierarchy, interactions, navigation structure, product browsing experience, product-detail experience, cart flow, and checkout flow** shown in the screenshots, while using clean, maintainable, reusable code.
+
+Do NOT build a static mockup.
+
+Every important UI element must have real functionality.
+
+---
+
+# 1. BRAND & DESIGN DIRECTION
+
+Brand name:
+
+**THENMOZHI DESIGNS**
+
+Positioning:
+
+Premium Indian ethnic fashion / handloom / sarees / salwar suits / kurtas / blouses.
+
+Visual personality:
+
+* Elegant
+* Minimal
+* Feminine
+* Traditional but modern
+* Premium boutique
+* Spacious editorial layout
+* High-quality fashion photography
+* Strong focus on product imagery
+
+Primary visual palette:
+
+* Deep plum / wine / burgundy
+* Warm cream / ivory background
+* Soft muted mauve accents
+* White product backgrounds
+* Very subtle borders
+* Dark plum typography
+
+The visual design should closely resemble the screenshots:
+
+* Large whitespace
+* Wide content areas
+* Thin borders
+* Generous vertical spacing
+* Large product photography
+* Letter-spaced navigation
+* Elegant headings
+* Minimal rounded corners
+* Subtle hover transitions
+* Premium editorial appearance
+
+Do not make the site look like a generic modern SaaS website.
+
+Do not use excessive gradients, glassmorphism, neon colors, heavy shadows, oversized rounded cards, or unnecessary animations.
+
+---
+
+# 2. RESPONSIVE DESIGN
+
+The site must be fully responsive.
+
+Desktop:
+
+* Large multi-column layouts
+* Full mega menu
+* Four-column product grid where appropriate
+* Large hero banners
+* Sticky product information behavior
+
+Tablet:
+
+* Reduce spacing
+* Adjust grid to 2–3 columns
+* Compact navigation
+
+Mobile:
+
+* Hamburger menu
+* Compact logo/header
+* Search icon
+* Cart icon
+* One/two-column product grid
+* Horizontal filter controls
+* Product gallery optimized for touch
+* Sticky Add to Cart
+* Checkout optimized for mobile
+
+Do not simply scale the desktop layout down.
+
+Create proper mobile layouts.
+
+---
+
+# 3. GLOBAL HEADER
+
+Create a reusable global header appearing throughout the storefront.
+
+## Announcement bar
+
+At the very top:
+
+* Deep plum background
+* Small centered promotional text
+* Left/right navigation arrows
+* Announcement text should rotate automatically
+
+Example announcements:
+
+* "Chennai customers can avail next day dispatch for customised blouses"
+* "Place your orders before 4PM for SAME DAY Delivery"
+* "Any blouse orders including readymade blouses are not eligible for same day delivery"
+* "Flat Rs. 100 shipping for all Domestic Orders"
+* "Thenmozhi Designs ships Worldwide"
+
+Announcement messages should be configurable.
+
+---
+
+# 4. MAIN HEADER
+
+Centered logo:
+
+THENMOZHI
+
+DESIGNS
+
+Use a premium serif-style logo treatment.
+
+Right-side icons:
+
+* Account
+* Search
+* Shopping bag/cart
+
+Navigation:
+
+* HOME
+* ABOUT US
+* VISIT OUR STORE
+* NEW ARRIVALS
+* UP TO 40% OFF
+* SHOP BY COLLECTION
+* BEST SELLERS
+* SKIRTS & DRESSES
+* SAREES
+* KURTIS AND SUIT SETS
+* BLOUSES
+
+Navigation items must actually link to their respective collections/pages.
+
+Show active navigation states.
+
+---
+
+# 5. NAVIGATION BADGES
+
+Support small floating badges positioned above selected navigation links.
+
+Examples:
+
+* STORE
+* NEW
+
+These must visually match the screenshots.
+
+They must not break the navigation on smaller screens.
+
+---
+
+# 6. MEGA MENUS
+
+Implement real dropdown/mega-menu functionality.
+
+## Kurtis and Suit Sets
+
+Show grouped categories such as:
+
+All Salwars
+
+Shop by Fabric:
+
+* Block Printed Cotton Suits
+* Printed
+* Chettinad Cotton
+* Silk Cotton
+* Chanderi
+* Mangalagiri Semi Silk Salwars
+* Georgette
+
+Co-Ord Sets:
+
+* Plain
+
+Short Top
+
+Kurtas:
+
+* Cotton
+* Chettinad
+* Ikkat
+* Ajrakh
+* Chikankari
+* Indigo
+
+Pants
+
+---
+
+## Shop By Collection
+
+Create dropdown categories such as:
+
+* Indigo Edit
+* The Bagru Story
+
+---
+
+## Best Sellers
+
+Dropdown:
+
+* Sarees
+* Salwars
+* Blouse
+
+---
+
+## Sarees
+
+Dropdown/categories:
+
+* Sarees
+* Additional relevant saree collections
+
+---
+
+## Blouses
+
+Dropdown:
+
+* Readymade Blouses
+* Customised Blouses
+* Blouse Catalogue
+* Sleeve Pattern Catalogue
+* Aari Work Pattern
+
+Mega menus should open on hover for desktop and on click/tap for touch devices.
+
+Close when clicking outside.
+
+---
+
+# 7. HOME PAGE
+
+Create a premium homepage.
+
+## Hero carousel
+
+Large full-width hero section.
+
+Each slide contains:
+
+* Large fashion image
+* Dark transparent overlay
+* Large headline
+* Supporting text where needed
+* SHOP NOW button
+* Carousel indicators
+* Previous/next controls
+
+Example hero content:
+
+"Chettinad Cotton Salwars"
+
+"Kanchi Silk Cotton Sarees"
+
+"Cotton Salwar Kameez Suits for Office Wear"
+
+Hero images should support different aspect ratios and responsive crops.
+
+Auto-rotate slides.
+
+Pause when user interacts.
+
+---
+
+# 8. HOMEPAGE SECTIONS
+
+After the hero:
+
+## New Arrivals
+
+Show four products on desktop.
+
+Each product card:
+
+* Product image
+* Product title
+* Price
+* Optional badge
+* Hover image or secondary image
+* Pinterest/save integration placeholder
+* Click opens product page
+
+Add:
+
+VIEW ALL
+
+button.
+
+---
+
+## Featured collection sections
+
+Create reusable product sections for:
+
+* New Arrivals
+* Best Sellers
+* Sarees
+* Salwar Suits
+* Blouses
+* Sale
+* Featured Collections
+
+Each section supports:
+
+* Horizontal carousel
+* Grid fallback
+* View All button
+
+---
+
+# 9. BRAND / VALUE SECTION
+
+Create an editorial section with five features similar to the screenshots:
+
+1. Uniquely Curated
+2. Handloom
+3. Supporting Artisans
+4. Seamless Shopping
+5. Home Grown
+
+Each feature includes:
+
+* Icon
+* Heading
+* Short description
+
+---
+
+# 10. ABOUT PAGE
+
+Create an About Us page.
+
+Include:
+
+* About Us heading
+* Brand introduction
+* Brand history
+* Founder story
+* Handmade/handloom philosophy
+* Mission
+* Craftsmanship
+* Growth story
+
+Use large whitespace and centered editorial typography.
+
+---
+
+# 11. VISIT OUR STORE PAGE
+
+Create a physical store page.
+
+Include:
+
+* Visit Our Store heading
+* Store promotional image
+* Store address
+* Store timings
+* Contact information
+* Get Directions button
+* Map integration placeholder
+* Store-related content
+
+Store details should be stored as configurable content.
+
+---
+
+# 12. COLLECTION / CATEGORY PAGES
+
+Create reusable collection pages.
+
+Examples:
+
+* New Arrivals
+* All Sarees
+* Best Seller – Sarees
+* Best Seller – Salwars
+* Best Seller – Blouse
+* Ready-made Blouses
+* Sale
+* Kurti & Suit Sets
+
+Every collection page must contain:
+
+## Breadcrumb
+
+Example:
+
+HOME / SHOP / NEW ARRIVALS
+
+## Collection heading
+
+Example:
+
+NEW ARRIVALS
+
+## Product toolbar
+
+Left:
+
+* Grid view
+* Alternate grid view
+* List view
+
+Right:
+
+* Sort By
+* Filter
+
+---
+
+# 13. PRODUCT FILTERING
+
+Filters must actually work.
+
+Support:
+
+## Size
+
+Depending on collection:
+
+* XXS
+* XS
+* S
+* M
+* L
+* XL
+* 2XL
+* 3XL
+* 4XL
+
+Blouse collections may use:
+
+* XS
+* S
+* M
+* L
+* XL
+* 2XL
+
+## Product type
+
+* Saree
+* Salwar
+* Kurti
+* Blouse
+* Dress
+* Skirt
+
+## Fabric
+
+Examples:
+
+* Chettinad Cotton
+* Silk Cotton
+* Chanderi
+* Georgette
+* Cotton
+* Linen
+* Handloom
+
+## Price
+
+Price range slider or preset ranges.
+
+## Availability
+
+* In Stock
+* Out of Stock
+
+Filters must update the displayed products without reloading the page where possible.
+
+Show active filter count.
+
+Allow Clear All.
+
+---
+
+# 14. SORTING
+
+Implement:
+
+* Featured
+* Newest
+* Price: Low to High
+* Price: High to Low
+* Best Selling
+* Alphabetical
+
+Sorting must actually rearrange products.
+
+---
+
+# 15. PRODUCT CARD
+
+Reusable product-card component.
+
+Each card supports:
+
+* Main image
+* Optional secondary image
+* Product name
+* Product subtitle
+* Current price
+* Original price
+* Discount amount
+* Discount percentage
+* Sale badge
+* Pinterest Save badge/integration
+* Wishlist icon
+* Quick view
+* Hover animation
+
+Examples:
+
+Chettinad Cotton Sarees C01
+
+Rs. 2,000
+
+Sale example:
+
+Rs. 2,000
+Rs. 3,000
+
+SAVE 33%
+
+Clicking product opens the product detail page.
+
+---
+
+# 16. PRODUCT DATA MODEL
+
+Products must not be hardcoded directly into components.
+
+Use structured product objects/database records.
+
+Each product should support:
+
+```text
+id
+slug
+name
+category
+subcategory
+description
+price
+compareAtPrice
+currency
+images[]
+thumbnail
+hoverImage
+sizes[]
+colors[]
+fabric
+length
+blouseDescription
+stock
+sku
+tags[]
+isNew
+isBestSeller
+isSale
+discountPercentage
+rating
+reviewCount
+washCare
+shippingInformation
+returnPolicy
+internationalShipping
+disclaimer
+relatedProducts[]
+```
+
+The architecture must allow hundreds or thousands of products.
+
+---
+
+# 17. PRODUCT DETAIL PAGE
+
+Create the product page shown in the screenshots.
+
+Desktop layout:
+
+LEFT:
+
+* Vertical thumbnail gallery
+
+CENTER:
+
+* Large product image gallery
+
+RIGHT:
+
+* Product information
+
+---
+
+# 18. PRODUCT IMAGE GALLERY
+
+Support:
+
+* Multiple images
+* Thumbnail selection
+* Active thumbnail border
+* Large image display
+* Image zoom
+* Fullscreen/lightbox
+* Keyboard navigation
+* Mobile swipe gallery
+
+Clicking a thumbnail updates the large image.
+
+---
+
+# 19. PRODUCT INFORMATION
+
+Show:
+
+* Product name
+* Price
+* Rating
+* Review count
+* Quantity selector
+* Gift wrap checkbox
+* Optional customisation options
+* Add to Cart
+* Buy It Now
+* Size Chart
+
+For apparel products, show available sizes.
+
+Disable unavailable sizes.
+
+---
+
+# 20. BLOUSE STITCHING OPTION
+
+For sarees that support stitching:
+
+Display:
+
+BLOUSE STITCHING
+
+Toggle:
+
+Yes (+Rs. 1,750)
+
+Description:
+
+"Basic blouse stitching in its pure form"
+
+This option must modify the cart price.
+
+Example:
+
+Product price:
+₹2,000
+
+Stitching:
+₹1,750
+
+Final line item:
+₹3,750
+
+The cart and checkout must retain this customization.
+
+---
+
+# 21. GIFT WRAP
+
+Support:
+
+Gift Wrap checkbox.
+
+When selected:
+
+* Add gift-wrap fee if configured
+* Store the option on the cart line item
+* Display it in cart/checkout
+
+---
+
+# 22. PRODUCT DESCRIPTION
+
+Create structured sections:
+
+Saree Description
+
+* Fabric
+* Length
+
+Blouse Description
+
+* Attached blouse / separate blouse / no blouse
+
+Additional information:
+
+* Estimated delivery
+* Authentic & quality assured
+* Hassle-free exchanges
+* Domestic shipping
+* International customs disclaimer
+
+---
+
+# 23. ACCORDION SECTIONS
+
+Create expandable sections:
+
+* Wash Care
+* Shipping & Delivery
+* International Shipments
+* Return & Exchange Policy
+* Disclaimer
+
+Accordion requirements:
+
+* Open/close animation
+* Plus/minus icon
+* Multiple sections may be open where appropriate
+* Mobile-friendly
+
+---
+
+# 24. SHIPPING LOGIC
+
+Implement configurable shipping rules.
+
+Default example:
+
+Domestic shipping:
+₹100 flat rate
+
+Typical delivery:
+
+* Order processing: 1–3 business days
+* Domestic delivery: 2–4 business days after dispatch
+* International delivery: 7–9 business days after dispatch
+
+Show estimated delivery message on product pages.
+
+For urgent Chennai deliveries, show configurable local-pickup/courier information.
+
+Do not hardcode business rules into UI components.
+
+Create a shipping configuration object/service.
+
+---
+
+# 25. INTERNATIONAL SHIPPING
+
+Allow international checkout.
+
+Display:
+
+* Country
+* Currency
+* Shipping method
+* Customs/import disclaimer
+
+Make it clear that customs/import duties may be paid by the customer.
+
+---
+
+# 26. CART SYSTEM
+
+Create a fully functional cart.
+
+Cart must support:
+
+* Add product
+* Remove product
+* Change quantity
+* Product image
+* Product name
+* Size
+* Color if applicable
+* Customization options
+* Gift wrap
+* Unit price
+* Subtotal
+* Shipping
+* Discount
+* Total
+
+Cart state must persist during navigation.
+
+Persist cart using localStorage/session or backend user cart.
+
+---
+
+# 27. MINI CART
+
+Cart icon in header should show quantity.
+
+Clicking cart opens a mini cart or cart drawer.
+
+Show:
+
+* Product
+* Quantity
+* Price
+* Subtotal
+* View Cart
+* Checkout
+
+Animate drawer smoothly.
+
+---
+
+# 28. CART PAGE
+
+Create a dedicated cart page.
+
+Show:
+
+LEFT:
+
+* Cart items
+* Quantity control
+* Remove
+
+RIGHT:
+
+* Discount code
+* Subtotal
+* Shipping
+* Total
+* Checkout button
+
+Ensure all totals are recalculated dynamically.
+
+---
+
+# 29. CUSTOMER ACCOUNT
+
+Header account icon opens account functionality.
+
+Support:
+
+* Sign up
+* Login
+* Logout
+* Forgot password
+* My account
+* Order history
+* Order details
+* Saved addresses
+* Wishlist
+
+Guest checkout should also be supported.
+
+---
+
+# 30. WISHLIST
+
+Users can add products to wishlist.
+
+Support:
+
+* Add/remove wishlist
+* Wishlist page
+* Logged-in persistence
+* Guest local storage fallback
+* Move wishlist item to cart
+
+---
+
+# 31. SEARCH
+
+Implement real product search.
+
+Search should support:
+
+* Product names
+* Product categories
+* Fabric
+* SKU
+* Tags
+
+Search UI:
+
+* Search icon
+* Expandable search field
+* Suggestions
+* Results count
+* Product thumbnails
+* Search results page
+
+Show "No results" state.
+
+---
+
+# 32. CHECKOUT
+
+Create a checkout experience visually similar to the supplied screenshots.
+
+Use a clean two-column layout on desktop.
+
+LEFT:
+
+Contact
+
+* Email
+* Marketing opt-in
+
+Delivery
+
+* Country/Region
+* First name
+* Last name
+* GST optional
+* Address
+* Apartment/suite
+* City
+* State
+* PIN code
+* Phone
+* Save information checkbox
+
+Shipping method
+
+Payment
+
+Billing address
+
+RIGHT:
+
+Order summary
+
+* Product thumbnail
+* Product name
+* Quantity badge
+* Variant/size
+* Price
+* Discount code
+* Subtotal
+* Shipping
+* Taxes
+* Total
+
+---
+
+# 33. CHECKOUT VALIDATION
+
+Validate all required fields.
+
+Examples:
+
+* Valid email
+* Required first/last name
+* Required address
+* Correct PIN code format
+* Valid phone number
+* Required state
+* Required country
+
+Do not allow payment until required fields are valid.
+
+Display clear inline validation errors.
+
+---
+
+# 34. TAX LOGIC
+
+Support tax calculation.
+
+For example:
+
+Product:
+
+₹2,600
+
+Tax included:
+
+₹123.80
+
+The tax rate must be configurable.
+
+Do not hardcode tax calculations inside the UI.
+
+---
+
+# 35. PAYMENT
+
+Payment gateway architecture must be implemented cleanly.
+
+Primary example:
+
+**Razorpay**
+
+Support:
+
+* UPI
+* Cards
+* International cards
+* Wallets
+
+Checkout should display:
+
+"Razorpay Secure"
+
+Payment flow:
+
+1. Validate cart
+2. Validate customer information
+3. Calculate total server-side
+4. Create payment order
+5. Open Razorpay checkout
+6. Receive payment response
+7. Verify payment server-side
+8. Create order
+9. Clear cart
+10. Redirect to order confirmation
+
+NEVER trust the client-side price during payment.
+
+The final price must be calculated and verified on the backend.
+
+---
+
+# 36. ORDER SYSTEM
+
+Create an order data model.
+
+Fields:
+
+```text
+orderId
+customerId
+items[]
+subtotal
+discount
+shipping
+tax
+total
+currency
+shippingAddress
+billingAddress
+paymentStatus
+orderStatus
+paymentId
+createdAt
+updatedAt
+trackingNumber
+```
+
+Order statuses:
+
+* Pending
+* Payment Processing
+* Paid
+* Confirmed
+* Processing
+* Shipped
+* Out for Delivery
+* Delivered
+* Cancelled
+* Returned
+* Refunded
+
+---
+
+# 37. ORDER CONFIRMATION PAGE
+
+After successful payment:
+
+Show:
+
+* Order success message
+* Order number
+* Customer email
+* Items ordered
+* Total
+* Shipping address
+* Payment status
+* Estimated delivery
+* Continue Shopping
+* Track Order
+
+---
+
+# 38. ORDER FAILURE
+
+If payment fails:
+
+Show:
+
+* Payment failed message
+* Reason where available
+* Retry Payment
+* Return to Cart
+
+Do not lose the cart.
+
+---
+
+# 39. PRODUCT STOCK LOGIC
+
+Products must support inventory.
+
+When an order is successfully paid:
+
+* Reduce stock
+* Prevent purchasing unavailable variants
+* Show "Out of Stock"
+* Disable unavailable options
+
+Reserve stock safely during checkout where appropriate.
+
+Do not rely only on frontend inventory checks.
+
+---
+
+# 40. RELATED PRODUCTS
+
+Product page should display:
+
+* You may also like
+* Similar products
+* Recently viewed
+* Related collection
+
+Use product category/tags to determine recommendations.
+
+---
+
+# 41. RECENTLY VIEWED PRODUCTS
+
+Store recently viewed products.
+
+Show up to 8 recently viewed items.
+
+Persist for guests using localStorage.
+
+---
+
+# 42. FOOTER
+
+Create the large plum footer from the screenshots.
+
+Columns:
+
+## Quick Links
+
+* Return and Store Credit Request
+* Order Status
+* My Account
+* Cart
+* Frequently Asked Questions
+* Blog
+
+## Customer Service
+
+* Stitching Policy
+* One Day Blouse Stitching
+* Shipping Policy
+* Return & Exchange Policy
+* Privacy Policy
+* Terms & Conditions
+* Contact Us
+
+## About Thenmozhi Designs
+
+Brand description
+
+Store Time:
+
+Mon–Sat 9AM–8PM
+Sunday 10AM–8PM
+
+Customer Care:
+
+Mon–Sat 9AM–6PM
+
+Location:
+
+Configured store address
+
+Button:
+
+GET DIRECTIONS
+
+Social icons:
+
+* Facebook
+* Instagram
+* Pinterest
+* YouTube
+
+---
+
+# 43. FLOATING UI
+
+Implement:
+
+## WhatsApp button
+
+Bottom-right floating button.
+
+Click should open WhatsApp conversation using a configurable business phone number.
+
+## Currency selector
+
+Bottom-left floating currency selector.
+
+Initial:
+
+India — INR
+
+Allow future support for multiple currencies.
+
+---
+
+# 44. STICKY PRODUCT BAR
+
+On product pages, once the user scrolls down:
+
+Display a fixed bar:
+
+LEFT:
+
+* Product thumbnail
+* Product name
+* Price
+
+RIGHT:
+
+* ADD TO CART
+
+Clicking Add to Cart should use the selected current product options.
+
+On mobile convert it into a compact sticky purchase bar.
+
+---
+
+# 45. PRODUCT QUICK VIEW
+
+Optional but recommended.
+
+From collection pages:
+
+* Hover/click Quick View
+* Product image
+* Price
+* Variant selection
+* Add to Cart
+
+Do not force the user to leave the collection page.
+
+---
+
+# 46. UI STATES
+
+Every interactive component must have proper states:
+
+* Loading
+* Empty
+* Error
+* Success
+* Disabled
+* Hover
+* Active
+* Selected
+* Out of stock
+
+Examples:
+
+Empty cart:
+
+"Your cart is empty"
+
+No search results:
+
+"No products found"
+
+Wishlist empty:
+
+"Your wishlist is empty"
+
+---
+
+# 47. ACCESSIBILITY
+
+Implement:
+
+* Semantic HTML
+* Keyboard navigation
+* Focus states
+* Proper labels
+* Alt text for product images
+* Accessible dialogs
+* Accessible dropdowns
+* Accessible accordions
+* ARIA where appropriate
+* Sufficient color contrast
+
+---
+
+# 48. PERFORMANCE
+
+Optimize the site for real-world commerce.
+
+Use:
+
+* Lazy loading images
+* Responsive images
+* Modern image formats
+* Code splitting
+* Route-level loading
+* Optimized fonts
+* Cached API requests
+* Minimal JavaScript where possible
+
+Do not load every product image immediately.
+
+---
+
+# 49. SEO
+
+Each product must have:
+
+* Unique title
+* Meta description
+* Canonical URL
+* Open Graph data
+* Product structured data
+
+Collection pages should also be SEO-friendly.
+
+Use clean URLs:
+
+```text
+/collections/new-arrivals
+/collections/sarees
+/collections/best-sellers
+/collections/sale
+/products/chettinad-cotton-sarees-c01
+/cart
+/checkout
+/account
+```
+
+---
+
+# 50. BACKEND / DATABASE ARCHITECTURE
+
+Create a proper backend architecture.
+
+Recommended structure:
+
+Frontend:
+
+* React / Next.js
+* TypeScript
+* Tailwind CSS or equivalent design system
+
+Backend:
+
+* Node.js
+* API routes / Express / Next.js server functions
+
+Database:
+
+* PostgreSQL or MongoDB
+
+Authentication:
+
+* Secure session/JWT architecture
+
+Payments:
+
+* Razorpay
+
+Storage:
+
+* Cloud object/image storage
+
+The exact technologies may change, but the architecture must remain modular.
+
+---
+
+# 51. ADMIN-READY ARCHITECTURE
+
+Create backend structures that make it possible to build an admin dashboard later.
+
+Admin should eventually be able to manage:
+
+Products
+Categories
+Collections
+Inventory
+Orders
+Customers
+Discounts
+Shipping
+Tax
+Homepage banners
+Announcement messages
+Policies
+Store information
+
+Products must be database-driven, not hardcoded.
+
+---
+
+# 52. DISCOUNT ENGINE
+
+Support discounts.
+
+Discount types:
+
+* Percentage
+* Fixed amount
+* Product-specific
+* Collection-specific
+* Minimum order value
+* Expiry date
+* Usage limit
+
+Example:
+
+SAVE 33%
+
+The displayed discount must be calculated from:
+
+compareAtPrice - salePrice
+
+Never manually display an incorrect discount.
+
+---
+
+# 53. URL / ROUTING LOGIC
+
+Use clean routes.
+
+Example:
+
+```text
+/
+ /about
+ /store
+ /collections/new-arrivals
+ /collections/sarees
+ /collections/best-sellers
+ /collections/sale
+ /collections/blouses
+ /collections/kurtis
+ /products/[slug]
+ /search
+ /cart
+ /checkout
+ /account
+ /account/orders
+ /wishlist
+ /contact
+```
+
+Route transitions should not unnecessarily reload the entire application.
+
+---
+
+# 54. ERROR HANDLING
+
+Create proper error states for:
+
+* Product not found
+* Collection not found
+* Payment failure
+* Network failure
+* Invalid coupon
+* Out-of-stock product
+* Session expiration
+* Checkout failure
+* Server error
+
+Do not expose raw backend errors to customers.
+
+---
+
+# 55. ANALYTICS EVENTS
+
+Prepare analytics events for:
+
+* Page view
+* Product view
+* Search
+* Filter applied
+* Add to cart
+* Remove from cart
+* Wishlist
+* Begin checkout
+* Payment initiated
+* Payment success
+* Purchase
+* Coupon applied
+
+Use a provider abstraction so analytics can later connect to Google Analytics / Meta Pixel / other services.
+
+---
+
+# 56. SECURITY
+
+Critical:
+
+* Validate prices server-side
+* Validate stock server-side
+* Validate coupons server-side
+* Never expose payment secrets
+* Never expose database credentials
+* Verify Razorpay signatures server-side
+* Sanitize user input
+* Protect authenticated endpoints
+* Rate-limit sensitive endpoints
+* Use secure cookies/session handling
+* Prevent duplicate order creation
+
+---
+
+# 57. VISUAL DETAILS TO MATCH
+
+Pay close attention to these visual characteristics from the screenshots:
+
+* Cream page background
+* Deep plum typography
+* Thin plum borders
+* Large editorial heading spacing
+* Very wide navigation
+* Uppercase navigation labels
+* Letter spacing
+* Minimal buttons
+* Large fashion images
+* Four-column desktop product grids
+* Circular size buttons
+* Large hero carousel
+* Thin divider lines
+* Plum filled primary buttons
+* White secondary buttons
+* Floating WhatsApp button
+* Floating INR selector
+* Elegant footer
+* Clean Shopify-style checkout layout
+
+---
+
+# 58. ANIMATION
+
+Keep animation subtle and premium.
+
+Use:
+
+* Fade
+* Slide
+* Gentle scale
+* Image crossfade
+* Dropdown transitions
+* Cart drawer transitions
+* Accordion expansion
+
+Avoid:
+
+* Excessive bouncing
+* Aggressive parallax
+* Long loading animations
+* Distracting effects
+
+Animation should enhance the fashion-brand feeling.
+
+---
+
+# 59. IMPORTANT IMPLEMENTATION RULE
+
+Do NOT create isolated pages with fake buttons.
+
+The application must behave like a real store.
+
+For example:
+
+If user selects:
+
+Chettinad Cotton Sarees C01
+
+Quantity = 2
+
+Blouse stitching = Yes
+
+Then:
+
+* Product page updates total
+* Add to Cart stores the variant/customization
+* Cart displays the correct data
+* Checkout displays the correct data
+* Backend calculates the final price
+* Payment uses the final verified price
+* Successful order stores the customization
+* Inventory updates after successful order
+
+The complete chain must work.
+
+---
+
+# 60. DATA FLOW
+
+The core commerce flow must be:
+
+```text
+Homepage
+   ↓
+Collection
+   ↓
+Product
+   ↓
+Variant / Customization
+   ↓
+Add to Cart
+   ↓
+Cart
+   ↓
+Checkout
+   ↓
+Shipping Address
+   ↓
+Shipping Calculation
+   ↓
+Tax Calculation
+   ↓
+Payment
+   ↓
+Payment Verification
+   ↓
+Order Creation
+   ↓
+Inventory Update
+   ↓
+Order Confirmation
+```
+
+No stage should be a fake frontend-only interaction.
+
+---
+
+# 61. FINAL EXPECTATION
+
+Build the site so that a user can genuinely:
+
+1. Browse the homepage
+2. Open categories
+3. Use mega menus
+4. Search products
+5. Filter products
+6. Sort products
+7. Open a product
+8. Browse product images
+9. Select size/variant
+10. Add stitching/customization
+11. Add gift wrap
+12. Add to wishlist
+13. Add to cart
+14. Modify cart
+15. Apply discount
+16. Enter checkout details
+17. Select shipping
+18. Calculate tax
+19. Pay with Razorpay
+20. Receive order confirmation
+21. View order history
+22. Track order
+23. Return to shopping
+
+The final result should feel like a **real premium Indian fashion commerce platform**, not a template.
+
+Prioritize:
+
+**1. Correct functionality**
+**2. Correct commerce logic**
+**3. Accurate visual hierarchy**
+**4. Responsive behavior**
+**5. Performance**
+**6. Maintainable architecture**
+
+Use the supplied screenshots as the primary visual reference for layout, spacing, components, interactions, and overall styling.

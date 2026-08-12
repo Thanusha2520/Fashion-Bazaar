@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Thenmozhi Designs"
+description = "A premium Indian fashion storefront for browsing handloom sarees, salwar suits, kurtas, and blouses with a refined editorial shopping experience, product detail flows, wishlist, cart, and checkout preview."
+version = "1.0.0"
+id = "artifacts/thenmozhi-designs"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25067
+
+[services.development]
+run = "pnpm --filter @workspace/thenmozhi-designs run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/thenmozhi-designs", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/thenmozhi-designs/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25067"
+BASE_PATH = "/"
