@@ -1,6 +1,6 @@
-# [Project name]
+# Thenmozhi Designs
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A premium Indian fashion storefront for discovering handloom sarees, salwar suits, kurtas, dresses, and blouses from a Chennai atelier.
 
 ## Run & Operate
 
@@ -22,15 +22,21 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/thenmozhi-designs/src/App.tsx` — storefront routes, structured catalog, local shopping state, cart, wishlist, checkout, and product interactions
+- `artifacts/thenmozhi-designs/src/index.css` — Thenmozhi Designs visual language and responsive styling
+- `attached_assets/` — supplied reference screenshots and product/editorial imagery
+- `artifacts/api-server/` — shared Express API service (currently only the starter health route)
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- The first storefront build is frontend-first and uses structured TypeScript catalog data with localStorage for guest cart and wishlist persistence.
+- Product, customization, gift-wrap, discount, shipping, and checkout totals are kept in one local commerce flow so selections persist from product detail through confirmation.
+- The uploaded screenshot assets are used as the visual source material; hero cropping intentionally removes embedded source-site chrome before display.
+- Live payment and fulfillment are not enabled until a commerce provider is connected; the checkout currently completes as an explicit local order state.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+Users can browse the home page and collections, search and filter the catalog, inspect products with galleries and accordions, save wishlist items, add size/customization/gift-wrap choices to a persistent cart, apply a discount, validate checkout details, and reach an order confirmation state.
 
 ## User preferences
 
@@ -38,7 +44,8 @@ _Populate as you build — explicit user instructions worth remembering across s
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- The app is registered at the root preview path and runs through the managed `artifacts/thenmozhi-designs: web` workflow.
+- If live checkout is added later, replace the local checkout completion with a connected commerce provider and move price, stock, tax, shipping, and order validation server-side.
 
 ## Pointers
 
