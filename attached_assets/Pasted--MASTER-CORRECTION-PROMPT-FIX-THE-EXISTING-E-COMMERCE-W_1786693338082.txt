@@ -1,0 +1,1338 @@
+# MASTER CORRECTION PROMPT — FIX THE EXISTING E-COMMERCE WEBSITE
+
+You are working on an existing premium Indian fashion e-commerce website that was already generated from reference screenshots.
+
+DO NOT rebuild the entire project from scratch.
+
+DO NOT remove the existing pages, components, navigation structure, product system, cart, checkout, or existing functionality.
+
+Instead:
+
+**AUDIT THE ENTIRE EXISTING PROJECT → IDENTIFY BROKEN / FAKE / PLACEHOLDER BEHAVIOR → FIX IT → IMPROVE THE DESIGN → TEST EVERY ROUTE AND INTERACTION.**
+
+The final result must feel like a real production-quality fashion brand website, not an AI-generated mockup.
+
+---
+
+# 1. MOST IMPORTANT REQUIREMENT: NO FAKE BUTTONS OR DEAD LINKS
+
+The current implementation contains many buttons, links, menu items, cards, and CTA elements that look functional but do nothing.
+
+This must be completely corrected.
+
+Do NOT simply delete them.
+
+For every existing button or interactive element, determine its intended destination or behavior and implement it.
+
+Examples include:
+
+* Shop Now
+* Shop New Arrivals
+* New Arrivals
+* Sarees
+* Kurtis
+* Blouses
+* Sale
+* Shop
+* About
+* Visit Our Store
+* Best Sellers
+* View All
+* Add to Cart
+* Buy Now
+* Wishlist
+* Account
+* Search
+* Cart
+* Size Chart
+* Blouse Stitching
+* Gift Wrap
+* Care
+* Shipping & Delivery
+* Returns & Exchanges
+* The Story
+* Stitching Policy
+* One Day Blouse Stitching
+* Shipping Policy
+* Return & Exchange Policy
+* Privacy Policy
+* Contact Us
+* Return & Store Credit
+* Order Status
+* My Account
+* Cart
+* Frequently Asked Questions
+* Blog
+* Get Directions
+* Social media icons
+* Announcement-bar Learn More
+* Filter
+* Sort
+* Grid/List buttons
+* Breadcrumbs
+* Product cards
+* Product thumbnails
+* Product image controls
+* Quantity controls
+* Checkout
+* Pay Now
+* Continue Shopping
+
+Every one of these must either:
+
+1. Navigate to a real page,
+2. Open a real modal/drawer,
+3. Trigger a real state change,
+4. Perform a real commerce action,
+5. Or use a real external destination.
+
+There must be NO visually interactive element that is just decoration pretending to work.
+
+---
+
+# 2. DO A FULL ROUTE AUDIT FIRST
+
+Before modifying the design, inspect the existing application.
+
+Create a complete route map.
+
+At minimum, verify:
+
+```text
+/
+ /about
+ /store
+ /collections/new-arrivals
+ /collections/sarees
+ /collections/kurtis
+ /collections/blouses
+ /collections/sale
+ /collections/best-sellers
+ /products/[slug]
+ /search
+ /wishlist
+ /cart
+ /checkout
+ /account
+ /account/orders
+ /contact
+ /faq
+ /blog
+ /policies/shipping
+ /policies/returns
+ /policies/privacy
+ /policies/terms
+ /policies/stitching
+ /order-status
+```
+
+Routes can differ according to the current project, but every visible navigation destination must resolve correctly.
+
+No links should lead to:
+
+* `#`
+* empty href
+* nonexistent route
+* unfinished placeholder
+* dead component
+* console error
+* blank page
+
+---
+
+# 3. KEEP THE CURRENT WEBSITE LOGIC
+
+Do NOT break the commerce system while fixing the UI.
+
+Preserve and verify:
+
+* Product data
+* Categories
+* Product slugs
+* Product detail pages
+* Cart state
+* Quantity updates
+* Wishlist
+* Product variants
+* Size selection
+* Blouse stitching
+* Gift wrap
+* Discounts
+* Shipping
+* Tax
+* Checkout
+* Payment architecture
+* Order creation
+* Customer account
+* Search
+* Filters
+* Sorting
+
+Improve the existing implementation instead of replacing functional parts unnecessarily.
+
+---
+
+# 4. PRODUCT PAGE — MAKE EVERYTHING REAL
+
+The product page must behave as a real product page.
+
+For example:
+
+### Product
+
+Chettinad Cotton Saree C02
+
+Price:
+
+₹2,000
+
+### Quantity
+
+Minus and plus buttons must actually modify quantity.
+
+### Size
+
+Selecting a size must update the selected variant.
+
+Unavailable sizes must visually disable.
+
+### Blouse stitching
+
+Checkbox/toggle must actually modify the cart line item and price.
+
+Example:
+
+```text
+Saree              ₹2,000
+Blouse stitching   +₹1,750
+---------------------------
+Total              ₹3,750
+```
+
+### Gift wrap
+
+The gift-wrap option must update the cart and final order.
+
+### Add to Cart
+
+Must actually:
+
+* Add the correct product
+* Preserve selected size
+* Preserve quantity
+* Preserve stitching option
+* Preserve gift-wrap option
+* Update cart count
+* Update cart totals
+
+### Buy Now
+
+Must immediately take the customer into the checkout flow using the selected product configuration.
+
+---
+
+# 5. PRODUCT ACCORDIONS
+
+These must actually expand/collapse.
+
+Sections:
+
+* The Story
+* Care
+* Shipping & Delivery
+* Returns & Exchanges
+* International Shipping
+* Disclaimer
+* Blouse information
+* Product details
+
+The current site has accordion headers that look functional.
+
+Make them actually functional.
+
+---
+
+# 6. SIZE CHART
+
+The Size Chart must open a clean modal/drawer.
+
+Include an actual size table.
+
+For example:
+
+```text
+Size | Bust | Waist | Hip | Shoulder
+XS
+S
+M
+L
+XL
+2XL
+3XL
+4XL
+```
+
+Use realistic demo measurements.
+
+Make this content easy to replace later.
+
+---
+
+# 7. SEARCH MUST ACTUALLY WORK
+
+The search icon must open a search interface.
+
+Support searching by:
+
+* Product name
+* Category
+* Fabric
+* Collection
+* Tags
+* SKU
+
+Examples:
+
+```text
+Chettinad
+Saree
+Cotton
+Blouse
+Silk
+Indigo
+Bagru
+```
+
+Show:
+
+* Search suggestions
+* Product thumbnails
+* Search results
+* Result count
+* No-results state
+
+Pressing Enter must open a real search-results page.
+
+---
+
+# 8. FILTER AND SORT MUST ACTUALLY WORK
+
+Collection pages must support:
+
+### Filters
+
+* Category
+* Size
+* Fabric
+* Price
+* Availability
+* Collection
+
+### Sorting
+
+* Featured
+* Newest
+* Best selling
+* Price low → high
+* Price high → low
+* Alphabetical
+
+Filtering and sorting must change the actual product results.
+
+Do NOT create fake filter controls that visually change but do not modify the product list.
+
+---
+
+# 9. PRODUCT CARDS MUST BE FUNCTIONAL
+
+Every product card must link to its actual product page.
+
+Support:
+
+* Click image
+* Click title
+* Wishlist
+* Quick view where present
+* Add to cart where supported
+
+If there is a Pinterest Save badge, it should not interfere with the product link.
+
+---
+
+# 10. HEADER AND MEGA MENU
+
+Every navigation item must have a meaningful destination.
+
+Create real dropdown/mega-menu routes.
+
+For example:
+
+### SHOP
+
+```text
+Sarees
+Kurtis
+Salwar Suits
+Blouses
+Skirts & Dresses
+Sale
+```
+
+### SAREES
+
+```text
+All Sarees
+Best Sellers
+New Arrivals
+Chettinad Cotton
+Silk Cotton
+Handloom
+```
+
+### KURTIS
+
+```text
+All Kurtis
+Cotton
+Chettinad
+Indigo
+Ajrakh
+Chikankari
+```
+
+### BLOUSES
+
+```text
+Ready-made Blouses
+Customised Blouses
+Blouse Catalogue
+Sleeve Patterns
+Aari Work
+```
+
+Every item must route somewhere real.
+
+---
+
+# 11. ANNOUNCEMENT BAR
+
+The announcement bar should not contain fake "Learn More" links.
+
+Make the messages configurable.
+
+Example:
+
+```text
+Handloom, thoughtfully chosen — from our Chennai atelier
+```
+
+Another:
+
+```text
+Free domestic delivery on orders above ₹2,500
+```
+
+Another:
+
+```text
+Custom blouse stitching available
+```
+
+"Learn More" must navigate to the relevant real policy/content page.
+
+---
+
+# 12. ABOUT PAGE — COMPLETELY FIX THE CURRENT PROBLEM
+
+The current About page is wrong because it appears to take the supplied reference screenshot/image and place it directly into the page.
+
+DO NOT DO THAT.
+
+The reference screenshots are design references only.
+
+Do not use screenshots of the reference website as website content.
+
+Do not crop screenshots.
+
+Do not place a screenshot inside an image component.
+
+Do not fake an About page with a reference image.
+
+Create an entirely original About page.
+
+---
+
+# 13. DEMO BRAND FOR THE ABOUT PAGE
+
+Use this fictional company identity throughout the demo:
+
+# AURELLE HOUSE
+
+Tagline:
+
+**Crafted slowly. Designed to endure.**
+
+Position it as:
+
+A premium contemporary Indian textile and fashion house based in Chennai.
+
+The company specializes in:
+
+* Handloom textiles
+* Contemporary sarees
+* Cotton clothing
+* Artisanal collections
+* Occasion wear
+* Everyday Indian silhouettes
+
+This is a fictional demo company identity.
+
+Do NOT represent it as a real company.
+
+---
+
+# 14. ABOUT PAGE DESIGN
+
+Create an elegant editorial About page.
+
+Structure:
+
+### Hero
+
+Large heading:
+
+**Aurelle House**
+
+Subheading:
+
+**Crafted slowly. Designed to endure.**
+
+Supporting text:
+
+"A contemporary Indian textile house bringing together traditional craftsmanship, thoughtful design and modern everyday dressing."
+
+Add one beautiful, clean fashion/editorial image.
+
+DO NOT use the reference screenshots.
+
+---
+
+# 15. ABOUT STORY
+
+Create original copy.
+
+Example direction:
+
+Aurelle House began with a simple belief: clothing can hold memory, craft and identity without feeling confined to the past.
+
+The studio works with textile makers and independent artisans to create pieces that balance heritage techniques with modern silhouettes.
+
+The focus is not mass production.
+
+The focus is thoughtful collections, considered fabrics and clothing meant to be lived in.
+
+Write polished editorial copy around this idea.
+
+---
+
+# 16. ABOUT PAGE IMAGE SYSTEM
+
+Use proper individual image assets.
+
+Do NOT paste screenshots.
+
+Use either:
+
+* High-quality stock photography
+* Pexels
+* Unsplash
+* Properly licensed remote image sources
+* Local original image assets
+* AI-generated original imagery if available
+
+Images should represent:
+
+* Indian textiles
+* Handloom weaving
+* Fabric close-ups
+* Editorial fashion
+* Artisan craftsmanship
+* Chennai-inspired architecture
+* Studio environments
+
+Each image must be a standalone asset.
+
+Use proper image URLs or imported files.
+
+Do NOT take an image from a screenshot and crop it.
+
+---
+
+# 17. ABOUT PAGE SECTIONS
+
+Include:
+
+### Our Beginning
+
+Brand origin story.
+
+### Our Philosophy
+
+Three principles:
+
+**Craft**
+Respect for traditional textile techniques.
+
+**Intent**
+Every collection is edited carefully rather than produced endlessly.
+
+**Modernity**
+Traditional materials interpreted for contemporary lives.
+
+### The People Behind the Craft
+
+Show artisan/editorial imagery.
+
+### Materials We Love
+
+Cards:
+
+* Handloom Cotton
+* Silk Cotton
+* Linen
+* Natural Textiles
+* Handwoven Fabrics
+
+### Our Chennai Studio
+
+A dedicated image plus short text about the studio.
+
+### Closing Statement
+
+Large editorial quote:
+
+**"The best pieces are not made to disappear after a season."**
+
+Add CTA:
+
+**EXPLORE THE COLLECTION**
+
+and make it route to the real collection page.
+
+---
+
+# 18. VISIT OUR STORE PAGE — FIX THIS TOO
+
+The current Store page should NOT use an image pasted from the reference website.
+
+Build a proper Store page.
+
+Use:
+
+* Clean store/editorial image
+* Store description
+* Address
+* Opening hours
+* Phone
+* Email
+* Map
+* Get Directions
+* Contact button
+
+Use a real map embed or a proper external map link.
+
+The Get Directions button must work.
+
+---
+
+# 19. STORE IMAGE SYSTEM
+
+Use a dedicated image for the store.
+
+Do not use:
+
+* Website screenshots
+* Cropped reference screenshots
+* Placeholder rectangles
+* Reused hero screenshot
+
+Use a proper clean image such as:
+
+* Boutique interior
+* Fashion studio
+* Textile showroom
+* Minimal Indian retail environment
+
+Make sure it visually matches the brand.
+
+---
+
+# 20. HOME PAGE VISUAL PROBLEM
+
+The current homepage has the right structure but looks too close to the reference screenshots in some sections.
+
+The goal is:
+
+**Inspired by the reference design language — not copied content.**
+
+Keep:
+
+* Spacious editorial composition
+* Cream background
+* Premium navigation
+* Large hero photography
+* Plum/wine accents
+* Elegant typography
+* Large imagery
+
+But use original/demo content and proper assets.
+
+---
+
+# 21. COLOR PALETTE
+
+Move away from the current overly saturated purple look.
+
+Use a refined palette:
+
+### Primary
+
+Deep wine / plum:
+
+`#4B173D`
+
+### Secondary
+
+Soft muted plum:
+
+`#76506A`
+
+### Cream
+
+`#F6F0E7`
+
+### Sand
+
+`#D9C8B5`
+
+### White
+
+`#FFFFFF`
+
+### Near Black
+
+`#171416`
+
+### Muted Text
+
+`#70656C`
+
+The page should feel:
+
+**sandal + cream + white + black + muted wine/plum**
+
+not bright purple.
+
+Use the deep wine color primarily for:
+
+* Buttons
+* Important headings
+* Borders
+* Navigation accents
+* Footer
+* Active states
+
+---
+
+# 22. TYPOGRAPHY
+
+The current font does not feel premium enough.
+
+Fix the typography system.
+
+Use a combination similar to:
+
+### Display font
+
+Elegant fashion/editorial serif.
+
+Possible choices:
+
+* Cormorant Garamond
+* DM Serif Display
+* Playfair Display
+
+### Body font
+
+Clean modern sans-serif.
+
+Possible choices:
+
+* Inter
+* Manrope
+* DM Sans
+
+### Navigation
+
+Small uppercase sans-serif with controlled letter spacing.
+
+### Headings
+
+Elegant serif with high contrast and generous spacing.
+
+Do NOT make everything bold.
+
+The hierarchy should use:
+
+* Thin serif
+* Regular serif
+* Medium sans
+* Semibold where necessary
+
+The design should look:
+
+**elegant + clean + sophisticated + premium**
+
+not chunky.
+
+---
+
+# 23. TYPOGRAPHIC RULES
+
+Avoid excessive letter spacing.
+
+Current site uses too much tracking in several areas.
+
+Use:
+
+* Navigation: moderate tracking
+* Headings: subtle tracking
+* Paragraphs: normal tracking
+* Buttons: moderate tracking
+
+Paragraphs must remain easy to read.
+
+---
+
+# 24. FOOTER
+
+Keep the current overall footer structure, but make every item functional.
+
+Columns:
+
+### Shop
+
+* New Arrivals
+* Sarees
+* Kurtis
+* Blouses
+* Sale
+
+### Customer Care
+
+* Shipping
+* Returns
+* Exchange
+* Stitching
+* FAQ
+* Contact
+
+### Company
+
+* About Aurelle House
+* Our Studio
+* Visit Us
+* Journal
+
+### Contact
+
+* Email
+* Phone
+* Address
+* Opening hours
+
+Social icons should route to configurable URLs.
+
+If a social account is not available, use a placeholder URL stored in configuration rather than a dead icon.
+
+---
+
+# 25. FAQ PAGE
+
+Create an actual FAQ page.
+
+Questions:
+
+* How long does shipping take?
+* Do you ship internationally?
+* Can I exchange an item?
+* Do you offer blouse stitching?
+* Can I change my order?
+* How should I care for handloom products?
+* Do you offer gift wrapping?
+* How do I track my order?
+
+Use real accordions.
+
+---
+
+# 26. STITCHING POLICY PAGE
+
+Do NOT leave "Stitching Policy" as a fake button.
+
+Create a real page.
+
+Explain:
+
+* Blouse stitching
+* Custom measurements
+* Turnaround time
+* Pricing
+* What is included
+* What cannot be modified
+* Exchange limitations for customised pieces
+
+---
+
+# 27. ONE DAY BLOUSE STITCHING
+
+If this feature exists in the UI, it must have actual logic.
+
+Create a page or section explaining:
+
+* Eligibility
+* Location limitations
+* Order cutoff
+* Processing time
+* Pricing
+* Pickup/delivery conditions
+
+Do NOT leave the button dead.
+
+If this is not available for all users, clearly mark it as a service condition rather than pretending every order qualifies.
+
+---
+
+# 28. ORDER STATUS
+
+Create a real Order Status page.
+
+Allow:
+
+```text
+Order ID
++
+Email / Phone
+```
+
+Then display:
+
+* Order status
+* Payment status
+* Date
+* Items
+* Estimated delivery
+* Tracking number where available
+
+Provide meaningful empty/error states.
+
+---
+
+# 29. ACCOUNT PAGE
+
+The current account page is too empty.
+
+Build a functional account experience.
+
+Allow:
+
+* Email sign-in
+* Guest checkout
+* Order history
+* Order details
+* Wishlist
+* Saved information
+
+Do not create a fake login UI that doesn't connect to anything.
+
+---
+
+# 30. CART
+
+Test the entire cart.
+
+Example:
+
+1. Open Product
+2. Select size
+3. Select stitching
+4. Select gift wrap
+5. Set quantity to 2
+6. Add to cart
+
+Cart must display exact configuration.
+
+Changing quantity must recalculate totals.
+
+Removing item must work.
+
+Checkout button must navigate correctly.
+
+---
+
+# 31. CHECKOUT
+
+Verify:
+
+* Contact information
+* Address
+* State
+* PIN
+* Phone
+* Shipping
+* Tax
+* Discount
+* Total
+* Payment
+
+No fake "Pay Now" button.
+
+If payment gateway is not configured yet, the UI should clearly show a configuration state rather than pretending payment succeeded.
+
+When payment is configured, payment must use actual backend verification.
+
+---
+
+# 32. RESPONSIVE DESIGN
+
+Do a full responsive audit.
+
+The website must work correctly at:
+
+```text
+1440px
+1280px
+1024px
+768px
+480px
+390px
+```
+
+Do not simply shrink desktop.
+
+Mobile must have:
+
+* Compact header
+* Hamburger menu
+* Search
+* Cart
+* Proper product gallery
+* Sticky purchase bar
+* Proper checkout fields
+* Responsive grids
+* Touch-friendly controls
+
+---
+
+# 33. IMAGE QUALITY
+
+Use proper image handling.
+
+For every image:
+
+* Correct aspect ratio
+* Object-fit
+* Responsive sizing
+* Lazy loading
+* Alt text
+* No distortion
+
+Do not stretch portrait images into landscape areas.
+
+Do not use screenshots as product images.
+
+---
+
+# 34. VISUAL CONSISTENCY
+
+Every page must feel like the same company.
+
+Use one design system.
+
+Shared:
+
+* Header
+* Footer
+* Buttons
+* Colors
+* Typography
+* Cards
+* Spacing
+* Form fields
+* Modals
+* Accordions
+* Icons
+* Borders
+
+Do not let each page look like it was generated independently.
+
+---
+
+# 35. BUTTON DESIGN
+
+Buttons should be elegant and minimal.
+
+Primary:
+
+Deep wine background
+White text
+
+Secondary:
+
+Cream/white background
+Wine border
+Wine text
+
+Hover:
+
+Subtle color transition.
+
+Avoid giant rounded pill buttons.
+
+Use moderate corner radius.
+
+---
+
+# 36. ICON SYSTEM
+
+Use one consistent icon library.
+
+Recommended:
+
+Lucide or another clean line-icon library.
+
+Do not mix unrelated icon styles.
+
+Icons should have consistent:
+
+* Stroke width
+* Size
+* Alignment
+
+---
+
+# 37. SPACING
+
+Use a consistent spacing system.
+
+Do not create random margins per component.
+
+Important visual priorities:
+
+* Large whitespace around headings
+* Comfortable product spacing
+* Clear separation between sections
+* Clean vertical rhythm
+
+---
+
+# 38. DO NOT COPY REFERENCE SCREENSHOTS
+
+This instruction is critical.
+
+The supplied screenshots are ONLY visual references.
+
+Do not:
+
+* Embed screenshots
+* Use screenshots as About-page images
+* Crop screenshots into content cards
+* Reuse the screenshot's text as image content
+* Present reference-site assets as your own assets
+
+Instead:
+
+**Recreate the design language using original components and independent image assets.**
+
+---
+
+# 39. DEMO CONTENT
+
+Use the following demo brand:
+
+# AURELLE HOUSE
+
+Tagline:
+
+**Crafted slowly. Designed to endure.**
+
+Use this brand consistently in:
+
+* Header
+* About
+* Footer
+* Store
+* Policies
+* Metadata
+* Page titles
+
+Keep the product catalog and commerce structure already present where useful.
+
+---
+
+# 40. FINAL QUALITY CHECK
+
+Before finishing, inspect the application as a real customer.
+
+Test this complete journey:
+
+```text
+Homepage
+↓
+New Arrivals
+↓
+Product
+↓
+Product image gallery
+↓
+Select size
+↓
+Select stitching
+↓
+Add gift wrap
+↓
+Add to Cart
+↓
+Cart
+↓
+Checkout
+↓
+Address
+↓
+Shipping
+↓
+Payment
+↓
+Order confirmation
+```
+
+Then test:
+
+```text
+Homepage
+↓
+About
+↓
+About content
+↓
+Explore Collection
+```
+
+Then:
+
+```text
+Homepage
+↓
+Visit Store
+↓
+Store address
+↓
+Get Directions
+```
+
+Then:
+
+```text
+Homepage
+↓
+Search
+↓
+Search result
+↓
+Product
+```
+
+Then:
+
+```text
+Collection
+↓
+Filter
+↓
+Sort
+↓
+Product
+```
+
+Then:
+
+```text
+Account
+↓
+Orders
+↓
+Order details
+```
+
+Every step must work.
+
+---
+
+# 41. FINAL RULE
+
+Do not tell me that a component is functional just because it has an `onClick`.
+
+Actually verify:
+
+* Navigation changes route
+* State changes
+* Data persists
+* Cart updates
+* Pricing updates
+* Filters update products
+* Search returns products
+* Accordions open
+* Modals open
+* Checkout validates
+* Orders are created correctly
+* Images load correctly
+* Buttons do what their labels imply
+
+If something is not yet connected to a backend service, implement a clean service abstraction and a realistic demo/mock layer rather than leaving a dead button.
+
+The goal is:
+
+**A complete, polished, believable, functional fashion e-commerce website.**
+
+Not:
+
+**A collection of attractive screens with fake interactions.**
+
+---
+
+# FINAL DESIGN TARGET
+
+Think:
+
+**Luxury Indian fashion editorial + modern boutique + clean e-commerce usability.**
+
+Visual keywords:
+
+**Elegant**
+**Sandal**
+**Cream**
+**White**
+**Black**
+**Muted Wine**
+**Editorial**
+**Minimal**
+**Clean**
+**Slim typography**
+**Premium**
+**Soft**
+**Sophisticated**
+**Consistent**
+
+Do not chase the screenshot pixel-for-pixel.
+
+Instead, capture the **quality, hierarchy, atmosphere and usability** of the reference while making the website original, functional and production-ready.

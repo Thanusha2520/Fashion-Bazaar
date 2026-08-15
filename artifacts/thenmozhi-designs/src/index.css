@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @plugin "@tailwindcss/typography";
@@ -24,40 +24,40 @@
 }
 
 :root {
-  --background: 42 56% 96%;
-  --foreground: 307 31% 18%;
-  --card: 42 62% 98%;
-  --card-foreground: 307 31% 18%;
-  --card-border: 37 26% 86%;
-  --border: 37 26% 86%;
-  --input: 37 26% 82%;
-  --ring: 315 83% 24%;
-  --primary: 315 83% 24%;
-  --primary-foreground: 42 56% 96%;
-  --secondary: 34 43% 91%;
-  --muted: 39 29% 91%;
-  --muted-foreground: 307 11% 44%;
+  --background: 39 42% 94%;
+  --foreground: 330 9% 9%;
+  --card: 0 0% 100%;
+  --card-foreground: 330 9% 9%;
+  --card-border: 30 30% 78%;
+  --border: 30 30% 78%;
+  --input: 30 23% 70%;
+  --ring: 320 52% 19%;
+  --primary: 320 52% 19%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 30 29% 82%;
+  --muted: 320 11% 43%;
+  --muted-foreground: 320 6% 43%;
   --app-font-sans: 'DM Sans', sans-serif;
-  --app-font-serif: 'Instrument Serif', Georgia, serif;
+  --app-font-serif: 'Playfair Display', Georgia, serif;
   --app-font-mono: 'DM Mono', monospace;
   --radius: 0.35rem;
   --shadow-sm: 0 8px 24px rgba(74, 20, 57, .07);
 }
 
 .dark {
-  --background: 307 31% 13%;
-  --foreground: 42 56% 96%;
-  --card: 307 24% 17%;
-  --card-foreground: 42 56% 96%;
-  --card-border: 307 18% 28%;
-  --border: 307 18% 28%;
-  --input: 307 18% 32%;
-  --ring: 35 72% 70%;
-  --primary: 35 72% 70%;
-  --primary-foreground: 307 31% 13%;
-  --secondary: 307 20% 24%;
-  --muted: 307 20% 24%;
-  --muted-foreground: 35 15% 75%;
+  --background: 330 9% 9%;
+  --foreground: 39 42% 94%;
+  --card: 320 24% 16%;
+  --card-foreground: 39 42% 94%;
+  --card-border: 320 18% 28%;
+  --border: 320 18% 28%;
+  --input: 320 18% 32%;
+  --ring: 30 29% 82%;
+  --primary: 30 29% 82%;
+  --primary-foreground: 330 9% 9%;
+  --secondary: 320 20% 24%;
+  --muted: 320 20% 24%;
+  --muted-foreground: 30 15% 75%;
 }
 
 @layer base {
@@ -74,7 +74,7 @@
   .font-display { font-family: var(--app-font-serif); }
   .font-mono-brand { font-family: var(--app-font-mono); }
   .text-balance { text-wrap: balance; }
-  .tracking-caps { letter-spacing: .18em; text-transform: uppercase; }
+  .tracking-caps { letter-spacing: .12em; text-transform: uppercase; }
 }
 
 .grain::after {
