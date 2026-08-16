@@ -681,7 +681,7 @@ Keep:
 * Cream background
 * Premium navigation
 * Large hero photography
-* Plum/wine accents
+* Brown/earth accents
 * Elegant typography
 * Large imagery
 
@@ -691,19 +691,19 @@ But use original/demo content and proper assets.
 
 # 21. COLOR PALETTE
 
-Move away from the current overly saturated purple look.
+Move away from the current overly saturated look toward a grounded brown look.
 
 Use a refined palette:
 
 ### Primary
 
-Deep wine / plum:
+Deep brown:
 
-`#4B173D`
+`#4A2704`
 
 ### Secondary
 
-Soft muted plum:
+Soft muted brown:
 
 `#76506A`
 
@@ -729,11 +729,11 @@ Soft muted plum:
 
 The page should feel:
 
-**sandal + cream + white + black + muted wine/plum**
+**sandal + cream + white + black + muted brown**
 
-not bright purple.
+not bright or saturated.
 
-Use the deep wine color primarily for:
+Use the deep brown color primarily for:
 
 * Buttons
 * Important headings
@@ -1084,14 +1084,14 @@ Buttons should be elegant and minimal.
 
 Primary:
 
-Deep wine background
+Deep brown background
 White text
 
 Secondary:
 
 Cream/white background
-Wine border
-Wine text
+Brown border
+Brown text
 
 Hover:
 
@@ -1323,7 +1323,7 @@ Visual keywords:
 **Cream**
 **White**
 **Black**
-**Muted Wine**
+**Muted Brown**
 **Editorial**
 **Minimal**
 **Clean**

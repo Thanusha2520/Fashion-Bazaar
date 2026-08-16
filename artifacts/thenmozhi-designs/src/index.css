@@ -25,38 +25,38 @@
 
 :root {
   --background: 39 42% 94%;
-  --foreground: 330 9% 9%;
+  --foreground: 31 90% 5%;
   --card: 0 0% 100%;
-  --card-foreground: 330 9% 9%;
+  --card-foreground: 31 90% 5%;
   --card-border: 30 30% 78%;
   --border: 30 30% 78%;
   --input: 30 23% 70%;
-  --ring: 320 52% 19%;
-  --primary: 320 52% 19%;
+  --ring: 31 90% 15%;
+  --primary: 31 90% 15%;
   --primary-foreground: 0 0% 100%;
   --secondary: 30 29% 82%;
-  --muted: 320 11% 43%;
-  --muted-foreground: 320 6% 43%;
+  --muted: 31 37% 40%;
+  --muted-foreground: 31 20% 43%;
   --app-font-sans: 'DM Sans', sans-serif;
   --app-font-serif: 'Playfair Display', Georgia, serif;
   --app-font-mono: 'DM Mono', monospace;
   --radius: 0.35rem;
-  --shadow-sm: 0 8px 24px rgba(74, 20, 57, .07);
+  --shadow-sm: 0 8px 24px rgba(74, 39, 4, .07);
 }
 
 .dark {
-  --background: 330 9% 9%;
+  --background: 31 90% 5%;
   --foreground: 39 42% 94%;
-  --card: 320 24% 16%;
+  --card: 31 65% 11%;
   --card-foreground: 39 42% 94%;
-  --card-border: 320 18% 28%;
-  --border: 320 18% 28%;
-  --input: 320 18% 32%;
+  --card-border: 31 44% 24%;
+  --border: 31 44% 24%;
+  --input: 31 44% 28%;
   --ring: 30 29% 82%;
   --primary: 30 29% 82%;
-  --primary-foreground: 330 9% 9%;
-  --secondary: 320 20% 24%;
-  --muted: 320 20% 24%;
+  --primary-foreground: 31 90% 5%;
+  --secondary: 31 45% 20%;
+  --muted: 31 45% 20%;
   --muted-foreground: 30 15% 75%;
 }
 

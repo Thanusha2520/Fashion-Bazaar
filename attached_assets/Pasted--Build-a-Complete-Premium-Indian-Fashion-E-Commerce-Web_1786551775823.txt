@@ -33,12 +33,12 @@ Visual personality:
 
 Primary visual palette:
 
-* Deep plum / wine / burgundy
+* Deep brown / earth / cacao
 * Warm cream / ivory background
 * Soft muted mauve accents
 * White product backgrounds
 * Very subtle borders
-* Dark plum typography
+* Dark brown typography
 
 The visual design should closely resemble the screenshots:
 
@@ -103,7 +103,7 @@ Create a reusable global header appearing throughout the storefront.
 
 At the very top:
 
-* Deep plum background
+* Deep brown background
 * Small centered promotional text
 * Left/right navigation arrows
 * Announcement text should rotate automatically
@@ -1162,7 +1162,7 @@ Persist for guests using localStorage.
 
 # 42. FOOTER
 
-Create the large plum footer from the screenshots.
+Create the large brown footer from the screenshots.
 
 Columns:
 
@@ -1547,8 +1547,8 @@ Critical:
 Pay close attention to these visual characteristics from the screenshots:
 
 * Cream page background
-* Deep plum typography
-* Thin plum borders
+* Deep brown typography
+* Thin brown borders
 * Large editorial heading spacing
 * Very wide navigation
 * Uppercase navigation labels
@@ -1559,7 +1559,7 @@ Pay close attention to these visual characteristics from the screenshots:
 * Circular size buttons
 * Large hero carousel
 * Thin divider lines
-* Plum filled primary buttons
+* Brown filled primary buttons
 * White secondary buttons
 * Floating WhatsApp button
 * Floating INR selector
