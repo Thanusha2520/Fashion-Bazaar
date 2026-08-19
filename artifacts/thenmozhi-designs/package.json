@@ -1,0 +1,7 @@
+{
+  "name": "thenmozhi-designs-wrapper",
+  "private": true,
+  "scripts": {
+    "build": "cd ../aurelle-house && pnpm install && pnpm run build && rm -rf ../thenmozhi-designs/dist && cp -R dist ../thenmozhi-designs/dist || true"
+  }
+}
