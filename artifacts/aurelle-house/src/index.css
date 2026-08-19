@@ -100,3 +100,8 @@
   .mobile-scroll { scrollbar-width: none; }
   .mobile-scroll::-webkit-scrollbar { display: none; }
 }
+
+/* Hide the unwanted mobile-only fixed purchase bar (keeps desktop unchanged) */
+div[class*="fixed"][class*="bottom-0"][class*="md:hidden"] {
+  display: none !important;
+}
